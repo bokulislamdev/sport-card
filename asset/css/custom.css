@@ -1,0 +1,98 @@
+:root {
+    --pc: #555555;
+    --pc2: #333333;
+    --sc: #C41E31;
+    --sc2: #931625;
+    --tc: #007bff;
+    --wc: #ffffff;
+    --bc: #000000;
+    --gc: #6f6f6f;
+    --cc: #cccccc;
+    --yc: #FF8F00;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--pc);
+    background: #fcfcfc;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+p {
+    line-height: 24px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pc);
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--pc);
+}
+
+button {
+    border: none;
+}
+
+
+.custom-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+
+.custom-row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.section-title h4 {
+    font-size: 35px;
+    line-height: 41px;
+    color: var(--sc);
+}
+
+.section-title p {
+    max-width: 685px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 auto;
+}
+.section-title span{
+    color: var(--sc);
+    font-size: 18px;
+    letter-spacing: 7px;
+}

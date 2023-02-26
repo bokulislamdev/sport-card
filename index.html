@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biyaincu</title>
+    <!--    BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    <!-- FONTAWSOME6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!--    BOOSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!--    GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--    SLICK SLIDER-->
+    <link rel="stylesheet" href="asset/css/slick.css">
+    <link rel="stylesheet" href="asset/css/slick-theme.css">
+    <!--    MAIN CSS-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+
+</head>
+
+<body>
+    <!--    HEADER TOP-->
+    <section class="header-top-section py-3">
+        <div class="container">
+            <div class="d-lg-flex">
+                <div class="flex-shrink-1 logo">
+                    <a href="#">
+                        <img src="asset/images/logo/logo.jpg" alt="">
+                    </a>
+                </div>
+                <div class="w-100 mt-2 mt-lg-0">
+                    <div class="header-top-right">
+                        <form action="#">
+                            <div class="d-flex">
+                                <div class="">
+                                    <select name="" id="">
+                                        <option value="">Category</option>
+                                        <option value="">Category 1</option>
+                                        <option value="">Category 2</option>
+                                        <option value="">Category 3</option>
+                                        <option value="">Category 4</option>
+                                        <option value="">Category 5</option>
+                                    </select>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <input type="text" placeholder="Search for product items or Releases">
+                                </div>
+                                <div class="">
+                                    <button type="submit">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <p class="best-result">
+                        <b>Best Results:</b> Type words from the Set, Player Name, or Team. Order is not important, and matching set names exactly is not important. You may use asterisks as wildcards (*) or (-) to exclude.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    HEADER TOP END-->
+    <!--    HEADER SECTION-->
+    <header>
+        <div class="container">
+            <div class="header-main">
+                <div class="d-flex align-items-center">
+                    <div class="flex-fill d-md-none">
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <span onClick="mobileClick()">Menu</span>
+                            <i class="fa fa-bars" onClick="mobileClick()"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="menubar d-none d-md-block flex-fill">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-house-door"></i>Home</a></li>
+                            
+                            <li class="sub-btn">
+                                <a href="#">Checklists By Sport <i class="bi bi-chevron-down"></i></a>
+                                <div class="sub-menu">
+                                    <a href="#">
+                                         <i class="bi bi-chevron-down"></i>
+                                         category 1
+                                    </a>
+                                    <a href="#">
+                                         <i class="bi bi-chevron-down"></i>
+                                         category 1
+                                    </a>
+                                    <a href="#">
+                                         <i class="bi bi-chevron-down"></i>
+                                         category 1
+                                    </a>
+                                    <a href="#">
+                                         <i class="bi bi-chevron-down"></i>
+                                         category 1
+                                    </a>
+                                </div>
+                            </li>
+                            
+                            <li><a href="#"> Top Selling Trading Cards</a></li>
+                            <li><a href="#">Contact</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--    HEADER SECTION END-->
+
+    <!--    MOBILE MENU-->
+    <div id="mobile-menu" class="mobile-menu">
+        <!-- accordion-->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="mobile-logo mb-3">
+                <a href="#">
+                    <img src="asset/images/logo/logo.jpg" alt="mobile-logo">
+                </a>
+                <i id="mobile-cross" class="fa fa-times" onClick="mobileClick()"></i>
+            </div>
+
+
+            <div class="accordion-item custom ">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Home
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            
+              
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#two" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Checklists By Sport
+                    </button>
+                </h2>
+                <div id="two" class="accordion-collapse collapse" aria-labelledby="two" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body custom">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Category 1</a></li>
+
+                             <li><a href="#"><i class="fa fa-chevron-right"></i>Category 2</a></li>
+                              <li><a href="#"><i class="fa fa-chevron-right"></i>Category 3</a></li>
+                               <li><a href="#"><i class="fa fa-chevron-right"></i>Category 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+           
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Top Selling Trading Cards
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Contact
+                        </button>
+                    </a>
+                </h2>
+            </div>
+           
+
+          
+
+        </div>
+
+    </div>
+    <div id="mobileOverlay" class="mobile-overlay" onClick="mobileClick()"></div>
+    <!--    MOBILE MENU END-->
+
+    <section class="main-section py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-4 col-xl-3">
+                    <div class="main-left">
+                        <div class="product-category">
+                            <h6>Checklists by Sport</h6>
+                            
+                            <div class="product-category-menu">
+                                <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Baseball
+                                <span>(203)</span>
+                            </a>
+                             <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                 Basketball
+                                <span>(203)</span>
+                            </a>
+                             <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                 Football 
+                                <span>(203)</span>
+                            </a>
+                             <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Hockey
+                                <span>(203)</span>
+                            </a>
+                                <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                 NonSport
+                                <span>(203)</span>
+                            </a>
+                             <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Baseball
+                                <span>(203)</span>
+                            </a>
+                             <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                 Basketball
+                                <span>(203)</span>
+                            </a>
+                             <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                 Football 
+                                <span>(203)</span>
+                            </a>
+                             <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Hockey
+                                <span>(203)</span>
+                            </a>
+                                <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                 NonSport
+                                <span>(203)</span>
+                            </a>
+                            
+                            <p>
+                                12,673,848 Cards Indexed in 233,696 Different Sets
+                            </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ads-left py-4">
+                           <h6>
+                               Shop eBay for 2021 Hobby Box
+                           </h6>
+                            <div class="ads-box">
+                                <a href="#">
+                                    2023 Topps Series 1 Baseball Hobby Box <br> 
+                                    Factory Sealed MLB
+                                    <br>
+                                    Newtown Square,PA,USA
+                                </a>
+                                
+                                <b>$88.99</b>
+                                
+                                <span>15d 23h 3m</span>
+                            </div>
+                            <div class="ads-box">
+                                <a href="#">
+                                    2023 Topps Series 1 Baseball Hobby Box <br> 
+                                    Factory Sealed MLB
+                                    <br>
+                                    Newtown Square,PA,USA
+                                </a>
+                                
+                                <b>$88.99</b>
+                                
+                                <span>15d 23h 3m</span>
+                            </div>
+                            <div class="ads-box">
+                                <a href="#">
+                                    2023 Topps Series 1 Baseball Hobby Box <br> 
+                                    Factory Sealed MLB
+                                    <br>
+                                    Newtown Square,PA,USA
+                                </a>
+                                
+                                <b>$88.99</b>
+                                
+                                <span>15d 23h 3m</span>
+                            </div>
+                        </div>
+                        <div class="ads-left py-4">
+                           <h6>
+                               Shop eBay for 2021 Hobby Box
+                           </h6>
+                            <div class="ads-box">
+                                <a href="#">
+                                    2023 Topps Series 1 Baseball Hobby Box <br> 
+                                    Factory Sealed MLB
+                                    <br>
+                                    Newtown Square,PA,USA
+                                </a>
+                                
+                                <b>$88.99</b>
+                                
+                                <span>15d 23h 3m</span>
+                            </div>
+                            <div class="ads-box">
+                                <a href="#">
+                                    2023 Topps Series 1 Baseball Hobby Box <br> 
+                                    Factory Sealed MLB
+                                    <br>
+                                    Newtown Square,PA,USA
+                                </a>
+                                
+                                <b>$88.99</b>
+                                
+                                <span>15d 23h 3m</span>
+                            </div>
+                            <div class="ads-box">
+                                <a href="#">
+                                    2023 Topps Series 1 Baseball Hobby Box <br> 
+                                    Factory Sealed MLB
+                                    <br>
+                                    Newtown Square,PA,USA
+                                </a>
+                                
+                                <b>$88.99</b>
+                                
+                                <span>15d 23h 3m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-8 col-xl-9">
+                    <div class="main-right">
+                        <div class="special-product">
+                            <div class="row">
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                    <a href="#" class="special-product-box">
+                                       <div class="special-product-image">
+                                            <img src="asset/images/photos/amazon.png" alt="">
+                                        
+                                        <img src="asset/images/special-products/1.jpg" alt="Product">
+                                       </div>
+                                        <p class="text-truncate">
+                                            Topps 2018 Stadium Club Retail Blaster Box (8 Packs/5 Cards)
+                                        </p>
+                                        <span>$79.99</span>
+                                        <button><i class="fa-brands fa-amazon"></i>Show Now</button>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                    <a href="#" class="special-product-box">
+                                       <div class="special-product-image">
+                                            <img src="asset/images/photos/amazon.png" alt="">
+                                        
+                                        <img src="asset/images/special-products/1.jpg" alt="Product">
+                                       </div>
+                                        <p class="text-truncate">
+                                            Topps 2018 Stadium Club Retail Blaster Box (8 Packs/5 Cards)
+                                        </p>
+                                        <span>$79.99</span>
+                                        <button><i class="fa-brands fa-amazon"></i>Show Now</button>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                    <a href="#" class="special-product-box">
+                                       <div class="special-product-image">
+                                            <img src="asset/images/photos/amazon.png" alt="">
+                                        
+                                        <img src="asset/images/special-products/1.jpg" alt="Product">
+                                       </div>
+                                        <p class="text-truncate">
+                                            Topps 2018 Stadium Club Retail Blaster Box (8 Packs/5 Cards)
+                                        </p>
+                                        <span>$79.99</span>
+                                        <button><i class="fa-brands fa-amazon"></i>Show Now</button>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                    <a href="#" class="special-product-box">
+                                       <div class="special-product-image">
+                                            <img src="asset/images/photos/amazon.png" alt="">
+                                        
+                                        <img src="asset/images/special-products/1.jpg" alt="Product">
+                                       </div>
+                                        <p class="text-truncate">
+                                            Topps 2018 Stadium Club Retail Blaster Box (8 Packs/5 Cards)
+                                        </p>
+                                        <span>$79.99</span>
+                                        <button><i class="fa-brands fa-amazon"></i>Show Now</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-section py-5">
+                           <div class="category-line">
+                              <p>
+                                  New Release checklists on SportsCardChecklist.com are compiled from public information released by the Card Manufacturers. Our checklists are posted as soon as the information is available, with photos and current sales history when available,
+                              </p>
+                               <div class="d-flex align-items-center flex-wrap border-bottom pb-3">
+                                   <a href="#" class="active-cat">All Listed</a>
+                                   <a href="#">Baseball</a>
+                                   <a href="#">Football</a>
+                                   <a href="#">Basketball</a>
+                                   <a href="#">Hockey</a>
+                                   <a href="#">Soccer</a>
+                                   <a href="#">Other</a>
+                                   <a href="#">Selling Online?</a>
+                               </div>
+                           </div>
+                            <div class="row mt-5">
+                                 <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/1.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/2.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/3.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/4.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/5.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                 <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/6.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                 <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/7.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                 <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/8.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                 <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/1.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/2.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/3.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/4.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/5.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                 <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/6.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                 <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/7.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                                 <div class="col-6 col-md-4 col-lg-3 pb-3">
+                                 <a href="#" class="product-box">
+                                     <img src="asset/images/products/8.jpg" alt="Product">
+                                     
+                                     <p>
+                                         2021-22 Upper Deck Synergy Hockey
+                                     </p>
+                                 </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    FOOTER SECTION-->
+    <footer class="footer-part py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pb-4 pb-lg-0">
+                    <div class="left">
+                        <img class="pt-3" src="asset/images/logo/logo.jpg" alt="logo">
+                        <p class="small-text pt-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sequi nisi facilis tempora dolore eligendi cupiditate id. Aliquam, dolorem, ipsum?
+                        </p>
+                        <div class="footer-social-media mb-3">
+                            <h6>Follow Us : </h6>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 pb-4 pb-lg-0">
+                    <div class="right">
+                        <div class="footer-title">
+                            <p class="paragraph mb-4">CHECKLISTS BY SPORT </p>
+                        </div>
+                        <div class="footer-link">
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Baseball
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Basketball
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Football
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Hockey
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                NonSport
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Golf
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Racing
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Wrestling
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                MMA
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Soccer
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Tennis
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Boxing
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Lacrosse
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                                                Rugby
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 pb-4 pb-lg-0">
+                    <div class="right">
+                        <div class="footer-title">
+                            <p class="paragraph mb-4">SELL ON EBAY AND AMAZON!</p>
+                        </div>
+                    </div>
+                    <div class="mazon-control-panel mt-3">
+                        <p>
+                            The Multiple Channel Control Panel is a complete suite of tools for selling sports cards and collectibles.
+                        </p>
+
+                        <div class="text-center">
+                            <a href="#">
+                                <img src="asset/images/photos/seles.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-4">
+                        <h6 class="border-bottom pb-2">Subscribe :</h6>
+                        <div class="mt-2">
+                            <form action="" class="subscribe-form">
+                                <input type="text" placeholder="Enter Email">
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--    FOOTER SECTION END-->
+
+
+    <!-- COPYRIGHT START -->
+    <section class="copyright-part py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                    <p>Copyrights © 2023 | All Rights Reserved at <a href="#">Sport Card Checklist.</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COPYRIGHT END -->
+
+
+
+    <!--    JQUERY GOOGLE HOST-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--    BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        //        MOBILE MENU
+        function mobileClick() {
+            $("#mobile-menu").toggleClass('mobileAdd');
+            $("#mobileOverlay").toggleClass('mobile-overlay');
+        }
+        //        MOBILE MENU END
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+@media only screen and (max-width:1199px) {}
+
+
+@media only screen and (max-width:991px) {
+
+}
+
+@media only screen and (max-width:767px) {
+
+    .logo {
+        display: inline-block;
+    }
+
+    .sub-btn a span {
+        padding: 0 6px;
+    }
+
+    .sub-menu > a {
+        font-size: 14px;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width:575px) {
+    body {
+        font-size: 14px;
+    }
+
+
+    .footer-head h6 {
+        font-size: 16px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footer-head ul li a {
+        font-size: 14px;
+    }
+
+    .mobileAdd {
+        left: 0 !important;
+        width: 100%;
+    }
+
+}
